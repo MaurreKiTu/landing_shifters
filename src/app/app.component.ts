@@ -9,7 +9,7 @@ import { FooterComponent } from './components/footer.component';
   standalone: true,
   template: `
     <div class="bg-bg bg-cover">
-      <header-comp> </header-comp>
+      <header-comp class=""> </header-comp>
       <main>
         <router-outlet />
       </main>

@@ -6,9 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div
-      class="title flex flex-col  items-center justify-center w-full p-2 min-h-80"
-    >
+    <div class="title flex flex-col  items-center justify-center w-full p-2 ">
       <div class=" p-2">
         <img class="p-2 " src="{{ logo }}" />
       </div>

@@ -5,11 +5,11 @@ import { MoviesComponent } from '../components/movies.component';
 @Component({
   standalone: true,
   imports: [CommonModule, MoviesComponent],
-  template: ` <movies-comp />
+  template: ` <movies-comp class="my-8" />
     <div class="flex justify-center flex-col font-['Gomarice'] text-3xl">
       <div class="flex justify-center flex-row text-button m-2">
         <span class="fi fi-fr"></span> 
-        <div *ngFor="let ville of villes; let index = index">{{ ville }} </div>
+        <div *ngFor="let ville of villes; let index = index">{{ ville }}</div>
       </div>
       <div class="flex justify-center text-neutral-50 mb-4">
         15-16-17 Novembre 2024
@@ -32,7 +32,7 @@ import { MoviesComponent } from '../components/movies.component';
 })
 export default class MainRoute {
   title = 'main-route';
-  villes = ['Paris', 'Angers', 'Lyon', 'Marseille'];
+  villes = ['Paris-', 'Angers-', 'Lyon-', 'Marseille'];
   ngOnInit() {}
   socials = [
     {
