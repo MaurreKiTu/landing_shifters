@@ -25,5 +25,6 @@ import { FooterComponent } from './components/footer.component';
   ],
 })
 export class AppComponent {
+  title = 'landing-projet-transition';
   logo = '../assets/img/logo.png';
 }
