@@ -8,11 +8,18 @@ module.exports = {
       // secondary: '#ecc94b',
 
       main: "#925CB4",
+
       // // ...
     },
   },
   theme: {
     extend: {},
+    backgroundImage: {
+      bg: "url('/assets/img/bg.png')",
+    },
+    colors: {
+      button: "#3c3f78",
+    },
     screens: {
       xs: "500px",
       sm: "640px",
