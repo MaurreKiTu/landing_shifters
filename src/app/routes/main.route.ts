@@ -22,7 +22,11 @@ import { MoviesComponent } from '../components/movies.component';
       </div>
     </div>
     <nav class="flex flex-row gap-4 justify-self-center justify-center">
-      <a *ngFor="let social of socials" href="{{ social.lien }}">
+      <a
+        *ngFor="let social of socials"
+        href="{{ social.lien }}"
+        target="_blank"
+      >
         <img
           class="p-2"
           src="../assets/img/socials/picto-{{ social.image }}.png"
@@ -36,15 +40,15 @@ export default class MainRoute {
   ngOnInit() {}
   socials = [
     {
-      lien: '',
+      lien: 'https://www.facebook.com/FestivalProjectionTransition',
       image: 'facebook',
     },
     {
-      lien: '',
+      lien: 'https://www.instagram.com/projectiontransition/',
       image: 'instagram',
     },
     {
-      lien: '',
+      lien: 'https://www.youtube.com/@projectiontransition',
       image: 'youtube',
     },
   ];
